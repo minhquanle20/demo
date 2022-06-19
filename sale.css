@@ -1,0 +1,120 @@
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .products-stemp{
+    display: block;
+}
+ul.products li .product-top .products-stemp img{
+    display: block;
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: #f72b3f;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.products li .product-info a{
+    display: block;
+}
+ul.products li .product-info{
+    padding: 10px 0px;
+}
+ul.products li .product-info a.produtcs-cat{
+    font-size: 11px;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+ul.products li .product-info a.products-name{
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.products li .product-info .product-price{
+    color: rgb(77, 76, 76);
+    padding: 2px 0px;
+    font-weight: 600;
+    text-decoration:line-through ;
+}
+ul.products li .product-info .product-price-new{
+    color: red;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+
+.headline li a{
+    margin-top: 0px auto;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+.headline li a:hover{
+    color: red;
+}
+li .produtc2-item{
+    margin-top: 50px;
+}
+
+/* giảm giá */
+ul.products li .produtc2-item .product-item-sale{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #f72b3f;
+}
+ul.products li .produtc2-item .product-item-sale::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 20px 6px;
+    border-style: solid;
+    border-color: transparent #f72b3f transparent #f72b3f;
+}
+ul.products li .produtc2-item .product-item-sale-percent{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    top: -1px;
+}
+ul.products li .produtc2-item .product-item-sale-label{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    top: -1px;
+}
